@@ -8,13 +8,121 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav>
-      <ul>
-        <li class="brand"><img src="logo.png" alt="spotify-logo" />Spotify</li>
-        <li>Home</li>
-        <li>About</li>
-      </ul>
-    </nav>
+    <div class="grid-main">
+      <section class="grid-fixed">
+        <div class="brand">
+          <i class="fa-brands fa-spotify logo"></i>
+          <span class="logo-label">Spotify</span>
+        </div>
+        <div class="icon-sec1">
+          <div class="icon-div">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-home icon"
+            >
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+              <polyline points="9 22 9 12 15 12 15 22"></polyline>
+
+              <span class="icon-label">Home</span>
+            </svg>
+          </div>
+          <div class="icon-div">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-search icon"
+            >
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <span class="icon-label">Search</span>
+          </div>
+          <div class="icon-div">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-book icon"
+            >
+              <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+              <path
+                d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"
+              ></path>
+            </svg>
+            <span class="icon-label">Your Library</span>
+          </div>
+        </div>
+        <div class="icon-sec1">
+          <div class="icon-div">
+            <img class="icon-box" src="playlist.png" alt="playlist" />
+            <span class="icon-label">Create Playlist</span>
+          </div>
+          <div class="icon-div">
+            <img class="icon-box" src="liked.png" alt="liked" />
+            <span class="icon-label">Liked Songs</span>
+          </div>
+          <hr class="hr" />
+        </div>
+        <div class="liked-playlist">
+          <div class="liked-label">On liked Playlist</div>
+          <div class="liked-label">On liked Playlist</div>
+          <div class="liked-label">On liked Playlist</div>
+          <div class="liked-label">On liked Playlist</div>
+          <div class="liked-label">On liked Playlist</div>
+          <div class="liked-label">On liked Playlist</div>
+        </div>
+
+        <div class="icon-div install">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="feather feather-arrow-down-circle icon"
+          >
+            <circle cx="12" cy="12" r="10"></circle>
+            <polyline points="8 12 12 16 16 12"></polyline>
+            <line x1="12" y1="8" x2="12" y2="16"></line>
+          </svg>
+          <span class="icon-label">Install App</span>
+        </div>
+      </section>
+
+      <main class="grid-scroll">songs</main>
+
+      <section class="grid-menu">play</section>
+    </div>
+
     <script src="script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/a04330f4c8.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
