@@ -137,6 +137,7 @@ hr {
 
 .btn-upgrade {
   background-color: transparent;
+  font-family: "Poppins", sans-serif;
   border: 0.8px solid var(--white-dark);
   border-radius: 50px;
   color: var(--white);
@@ -166,6 +167,7 @@ select option {
   display: flex;
   align-items: center;
   position: relative;
+  font-family: "Poppins", sans-serif;
   color: var(--white);
   padding: 0.1rem;
   font-size: 0.9rem;
