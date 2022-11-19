@@ -114,7 +114,49 @@
         </div>
       </section>
 
-      <main class="grid-scroll">songs</main>
+      <main class="grid-scroll">
+        <div class="nav">
+          <button class="btn-upgrade">Upgrade</button>
+          <select class="Select-dropdown">
+            <option value="none" selected disabled hidden>Prachi</option>
+            <option value="account">Account</option>
+            <option value="Profile">Profile</option>
+            <option value="Premium">Upgrade to Premium</option>
+            <option value="Support">Support</option>
+            <option value="Download">Download</option>
+            <option value="Settings">Settings</option>
+            <option value="Log-out">Log out</option>
+          </select>
+          <button class="select-bar">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-user"
+            >
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+              <circle cx="12" cy="7" r="4"></circle></svg
+            ><span class="acc-label">Prachi</span
+            ><img class="acc-arrow active" src="a.png" alt="down-arrow" />
+            <img class="acc-arrow" src="b.png" alt="up=arrow" />
+          </button>
+        </div>
+        <ul class="select-option">
+          <li>Account</li>
+          <li>Profile</li>
+          <li>Upgrade to Premium</li>
+          <li>Support</li>
+          <li>Download</li>
+          <li>Settings</li>
+          <li>Log out</li>
+        </ul>
+      </main>
 
       <section class="grid-menu">play</section>
     </div>
