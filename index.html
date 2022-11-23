@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Spotify - Listening is everything</title>
+    <link rel="icon" type="image/x-icon" href=" others/spotify.ico" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -75,11 +76,11 @@
         </div>
         <div class="icon-sec1">
           <div class="icon-div">
-            <img class="icon-box" src="playlist.png" alt="playlist" />
+            <img class="icon-box" src="others/playlist.png" alt="playlist" />
             <span class="icon-label">Create Playlist</span>
           </div>
           <div class="icon-div">
-            <img class="icon-box" src="liked.png" alt="liked" />
+            <img class="icon-box" src="others/liked.png" alt="liked" />
             <span class="icon-label">Liked Songs</span>
           </div>
           <hr class="hr" />
@@ -115,47 +116,194 @@
       </section>
 
       <main class="grid-scroll">
-        <div class="nav">
-          <button class="btn-upgrade">Upgrade</button>
-          <select class="Select-dropdown">
-            <option value="none" selected disabled hidden>Prachi</option>
-            <option value="account">Account</option>
-            <option value="Profile">Profile</option>
-            <option value="Premium">Upgrade to Premium</option>
-            <option value="Support">Support</option>
-            <option value="Download">Download</option>
-            <option value="Settings">Settings</option>
-            <option value="Log-out">Log out</option>
-          </select>
-          <button class="select-bar">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="feather feather-user"
-            >
-              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-              <circle cx="12" cy="7" r="4"></circle></svg
-            ><span class="acc-label">Prachi</span
-            ><img class="acc-arrow active" src="a.png" alt="down-arrow" />
-            <img class="acc-arrow" src="b.png" alt="up=arrow" />
-          </button>
-        </div>
-        <ul class="select-option">
-          <li>Account</li>
-          <li>Profile</li>
-          <li>Upgrade to Premium</li>
-          <li>Support</li>
-          <li>Download</li>
-          <li>Settings</li>
-          <li>Log out</li>
-        </ul>
+        <nav>
+          <div class="nav">
+            <div class="prev-forw">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-chevron-left arr-prevForw"
+              >
+                <polyline points="15 18 9 12 15 6"></polyline>
+              </svg>
+
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-chevron-right arr-prevForw"
+              >
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </div>
+            <div class="nav-right">
+              <button class="btn-upgrade">Upgrade</button>
+              <!-- <select class="Select-dropdown">
+                <option value="none" selected disabled hidden>Prachi</option>
+                <option value="account">Account</option>
+                <option value="Profile">Profile</option>
+                <option value="Premium">Upgrade to Premium</option>
+                <option value="Support">Support</option>
+                <option value="Download">Download</option>
+                <option value="Settings">Settings</option>
+                <option value="Log-out">Log out</option>
+              </select> -->
+
+              <button>
+                <div class="select-bar">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="feather feather-user"
+                  >
+                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="12" cy="7" r="4"></circle></svg
+                  ><span class="acc-label">Prachi</span
+                  ><img
+                    class="acc-arrow active dwnArr"
+                    src="others/a.png"
+                    alt="down-arrow"
+                  />
+                  <img
+                    class="acc-arrow upArr"
+                    src="others/b.png"
+                    alt="up=arrow"
+                  />
+                </div>
+              </button>
+            </div>
+            <ul class="select-option">
+              <li
+                value="Account"
+                onclick="window.open('https://www.youtube.com/')"
+                class="flex-center"
+              >
+                <span>Account</span>
+
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-arrow-up-right"
+                >
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </li>
+              <li
+                value="Profile"
+                onclick="window.open('https://www.youtube.com/')"
+              >
+                Profile
+              </li>
+              <li
+                value="Upgrade to Premium"
+                onclick="window.open('https://www.youtube.com/')"
+                class="flex-center"
+              >
+                <span>Upgrade to Premium</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-arrow-up-right"
+                >
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </li>
+              <li
+                value="Support"
+                onclick="window.open('https://www.youtube.com/')"
+                class="flex-center"
+              >
+                <span>Support</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-arrow-up-right"
+                >
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </li>
+              <li
+                value="Download"
+                onclick="window.open('https://www.youtube.com/')"
+                class="flex-center"
+              >
+                <span>Download</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-arrow-up-right"
+                >
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </li>
+              <li
+                value="Settings"
+                onclick="window.open('https://www.youtube.com/')"
+              >
+                Settings
+              </li>
+              <hr />
+              <li
+                value="Log out"
+                onclick="window.open('https://www.youtube.com/')"
+              >
+                Log out
+              </li>
+            </ul>
+          </div>
+        </nav>
       </main>
 
       <section class="grid-menu">play</section>

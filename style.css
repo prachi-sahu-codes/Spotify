@@ -20,6 +20,8 @@ body {
 }
 .grid-main {
   display: grid;
+  width: 100vw;
+  height: 100vh;
   grid-template-columns: 0.85fr 4fr;
   grid-template-rows: calc(100vh - 5.5rem) 5.5rem;
 }
@@ -31,8 +33,11 @@ body {
 }
 .grid-scroll {
   background-color: var(--black);
+  background-image: linear-gradient(rgb(35, 35, 35), rgb(15, 15, 15));
   color: var(--white-light);
+  overflow-y: scroll;
 }
+
 .grid-menu {
   background-color: var(--black-light);
   color: var(--white-light);
@@ -135,6 +140,40 @@ hr {
 
 /********** Main body*********/
 
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* position: fixed;
+  top: 0;
+  width: 100%; */
+  padding: 1rem;
+}
+img {
+  width: 80%;
+}
+.active_nav {
+  background-color: var(--black);
+}
+
+.prev-forw {
+  display: flex;
+  align-items: center;
+}
+.arr-prevForw {
+  border-radius: 50px;
+  color: var(--white-dark);
+  width: 2rem;
+  height: 2rem;
+  background-color: var(--black);
+  margin-left: 1rem;
+  cursor: pointer;
+}
+.nav-right {
+  display: flex;
+  align-items: center;
+}
+
 .btn-upgrade {
   background-color: transparent;
   font-family: "Poppins", sans-serif;
@@ -142,8 +181,18 @@ hr {
   border-radius: 50px;
   color: var(--white);
   font-size: 0.8rem;
-  padding: 0.4rem 1rem;
+  font-weight: 600;
+  padding: 0.4rem 0.8rem;
+  cursor: pointer;
+  transition: transform 0.1s;
 }
+
+.btn-upgrade:hover {
+  background-color: var(--black-dark);
+  transform: scale(1.01);
+  border: 0.8px solid var(--white-light);
+}
+
 .Select-dropdown {
   border-radius: 50px;
   padding: 0.4rem 1rem;
@@ -151,6 +200,7 @@ hr {
   color: #fff;
   font-weight: 600;
   border: 0.8px solid var(--white-dark);
+  margin-left: 2rem;
 }
 select option {
   margin: 40px;
@@ -158,23 +208,28 @@ select option {
   color: #fff;
   border-radius: 50px;
 }
+button {
+  background-color: transparent;
+  border-width: 2px;
+  border-style: none;
+  border-color: transparent;
+}
 
 /****new*****/
-.nav {
-  display: flex;
-}
+
 .select-bar {
   display: flex;
   align-items: center;
-  position: relative;
+  cursor: pointer;
   font-family: "Poppins", sans-serif;
   color: var(--white);
   padding: 0.1rem;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   font-weight: 600;
   border-radius: 50px;
   background-color: var(--black-dark);
   border-style: none;
+  margin-left: 1.8rem;
 }
 
 .select-bar:hover {
@@ -183,7 +238,7 @@ select option {
 }
 
 .acc-label {
-  padding: 0 0.7rem;
+  padding: 0 0.6rem;
 }
 .feather-user {
   background: var(--white-darker);
@@ -199,10 +254,39 @@ select option {
   padding-right: 0.4rem;
 }
 
+/*********Active************/
 .active {
-  display: inline-block;
+  display: inline-block !important;
 }
 
 .select-option {
+  display: none;
+  position: absolute;
+  cursor: pointer;
+  width: 12rem;
+  top: 3rem;
+  right: 1rem;
   list-style: none;
+  background-color: var(--black-super-light);
+  border-radius: 4px;
+  padding-inline-start: 0px;
+  padding: 0.4rem;
+}
+
+.select-option li {
+  padding: 0.5rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.select-option li:hover {
+  background-color: var(--white-darker);
+}
+
+/***************Flex box******************/
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
